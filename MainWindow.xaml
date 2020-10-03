@@ -1,0 +1,24 @@
+﻿<Window x:Name="Morse_Converter" x:Class="MorseCodeWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MorseCodeWPF"
+        mc:Ignorable="d"
+        Title="Morse Converter" Height="450" Width="800">
+    <Grid HorizontalAlignment="Right" Margin="0,0,-0.4,0" Width="794" Height="420" VerticalAlignment="Bottom">
+        <TextBox x:Name="TextToConvert" HorizontalAlignment="Right" Height="87" Margin="0,0,286,273" TextWrapping="Wrap" Text="Text to convert" VerticalAlignment="Bottom" Width="448"/>
+        <Button x:Name="MorseToText" Content="Morse to text" HorizontalAlignment="Right" Margin="0,0,544,198" VerticalAlignment="Bottom" Width="169" Height="50" Click="OnClick" ClickMode="Press"/>
+        <Button x:Name="TextToMorse" Content="Text to morse" HorizontalAlignment="Right" Margin="0,0,321,198" VerticalAlignment="Bottom" Width="169" Height="50" Click="OnClick2" ClickMode="Press"/>
+        <TextBox x:Name="ConvertedText" HorizontalAlignment="Right" Height="87" Margin="0,0,286,91" TextWrapping="Wrap" Text="Text to convert" VerticalAlignment="Bottom" Width="448"/>
+        <TextBox x:Name="Dot" HorizontalAlignment="Left" Height="44" Margin="673,60,0,0" TextWrapping="Wrap" Text="." VerticalAlignment="Top" Width="50"/>
+        <TextBlock HorizontalAlignment="Left" Height="44" Margin="597,60,0,0" TextWrapping="Wrap" Text="Dot:" VerticalAlignment="Top" Width="56" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Left" Height="44" Margin="597,134,0,0" TextWrapping="Wrap" Text="Dash:" VerticalAlignment="Top" Width="56" TextAlignment="Right"/>
+        <TextBlock x:Name="LetterSeparator" HorizontalAlignment="Left" Height="44" Margin="597,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Right"><Run Text="Letter "/><Run Text="separator"/><Run Text=":"/></TextBlock>
+        <TextBlock x:Name="WordSeparator" HorizontalAlignment="Left" Height="44" Margin="597,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Right"><Run Text="Word "/><Run Text="separator"/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="Dash" HorizontalAlignment="Left" Height="44" Margin="673,134,0,0" TextWrapping="Wrap" Text="-" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="LetterSeparatorChar" HorizontalAlignment="Left" Height="44" Margin="673,209,0,0" TextWrapping="Wrap" Text="/" VerticalAlignment="Top" Width="50" TextChanged="LetterSeparatorChar_TextChanged"/>
+        <TextBox x:Name="WordSeparatorString" HorizontalAlignment="Left" Height="44" Margin="673,285,0,0" TextWrapping="Wrap" Text="//" VerticalAlignment="Top" Width="50" />
+
+    </Grid>
+</Window>
