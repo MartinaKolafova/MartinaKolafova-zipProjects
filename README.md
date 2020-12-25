@@ -1,6 +1,6 @@
 # MartinaKolafova-zipProjects
 <p>
-Crossword --> Ze sady dvojic Otázka - odpověď sestaví křížovku s požadovaným slovem do tajenky
+CrosswordGenerator --> Ze sady dvojic Otázka - odpověď sestaví křížovku s požadovaným slovem do tajenky
 <p>
 MorseCodeWPF --> Konvertor textu do morseovky a z morseovky. Je možné měnit znaky kódu. 
 <p>
